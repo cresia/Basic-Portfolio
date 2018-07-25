@@ -106,7 +106,7 @@ a:hover,a:active{
 
 .mainC{
     
-    background-color: #ffecedb8;
+    background-color: #f0f6cfc4;
 
     margin-right: 100px;
     margin-left: 120px;
@@ -125,7 +125,7 @@ a:hover,a:active{
 
 .mainP{
     
-    background-color: #ffecedb8;
+    background-color: #827576b8;
 
     margin-right: 100px;
     margin-left: 120px;
@@ -143,3 +143,12 @@ a:hover,a:active{
 }
 
 
+.portfolio{
+    font-size: 200%;
+    color: #fdfdfd;
+}
+
+.contact{
+    font-size: 200%;
+    color: #fa8206fc;
+}
