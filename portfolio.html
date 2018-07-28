@@ -24,7 +24,7 @@
 
         </div>
 
-    </div>
+</div>
 
 
     
@@ -33,17 +33,55 @@
 
             <h1 class= "portfolio">Portfolio</h1>
 
-            <img src="assets/images/yummy.jpg" width="250px" height="250px" alt="snack"/>
-            <img src="assets/images/lumpia.jpg" width="250px" height="300px" alt="snack"/>
-            <img src="assets/images/org_chick.jpg" width="250px" height="300px" alt="snack"/>
 
-          
-           
+            <div style="text-align:center">
+                    <p id = "click">Click on the images below:</p>
+                  </div>
+                 
+                  <div class="row">
+                    <div class="column">
+                      <img src="assets/images/yummy.jpg" style="width:50%" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                      <img src="assets/images/lumpia.jpg" style="width:40%" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                      <img src="assets/images/org_chick.jpg" style="width:40%" onclick="myFunction(this);">
+                    </div>
+                  </div>
+                  
+                  <div class="container">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img id="expandedImg" style="width:25%">
+                    <div id="imgtext"></div>
+                  </div>
+                  
+                  <script>
+                  function myFunction(imgs) {
+                      var expandImg = document.getElementById("expandedImg");
+                      var imgText = document.getElementById("imgtext");
+                      expandImg.src = imgs.src;
+                      imgText.innerHTML = imgs.alt;
+                      expandImg.parentElement.style.display = "block";
+                  }
+                  </script>
+        
 
     </div>
+
+   
+
+    <div class = "footer">
+    
+            <p>copyright</p>
+        </div>
+
+
     
     
 </body2>
+
+
 </html>
 
 

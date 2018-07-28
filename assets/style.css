@@ -1,4 +1,9 @@
 
+/* float to set pciture and text net to each other
+<hr> to make a bar line inside the container */
+
+
+
 body, html{
     background: url("http://dl.glitter-graphics.com/pub/3562/3562734jf9cnz1nl0.gif");
     margin-bottom:10px;
@@ -6,7 +11,7 @@ body, html{
     margin-right:5px;
     font-family: verdana, Georgia, serif;
     font-size: 14px;
-    height: 100%; 
+    height: 105%; 
     /* Center and scale the image nicely */
    /* background-position: center; */
     background-repeat: no-repeat;
@@ -32,17 +37,14 @@ li{
     display: block;
     font-size: 30px;
 
-   
-
 }
 
 
 .line{
     background-color: #9494c4;
     margin-top: 30px;  
-    padding: 20px;
+    padding: 10px;
    
-
 }
 
 #navbar{
@@ -93,14 +95,23 @@ a:hover,a:active{
     padding: 20px;
     font-size: 110%;
 
-    height: 600px;
+    height: 560px;
     width: 1100px;
 
 }
 
+#me{
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 10px;
+
+}
+
+
 #text1{
-    font-size: 110%;
+    font-size: 150%;
     color: #530651;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
@@ -125,7 +136,7 @@ a:hover,a:active{
 
 .mainP{
     
-    background-color: #827576b8;
+    background-color: #827582b8;
 
     margin-right: 100px;
     margin-left: 120px;
@@ -142,6 +153,20 @@ a:hover,a:active{
 
 }
 
+.footer{
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #9494c4;
+    color: white;
+    text-align: center;
+
+}
+
+.about{
+    color:#530651;
+}
 
 .portfolio{
     font-size: 200%;
@@ -151,4 +176,42 @@ a:hover,a:active{
 .contact{
     font-size: 200%;
     color: #fa8206fc;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#click{
+    color: whitesmoke;
 }
